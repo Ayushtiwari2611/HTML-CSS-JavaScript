@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .container{
+            border: 5px solid red;
+            background-color: rgb(175, 231, 241);
+            border-radius: 175px;
+            padding: 25px;
+            margin: 100px auto;
+            width: 1000px;
+            height: 250px;
+            font-family: cursive;
+        }
+        h3{
+            text-align: center;
+            font-family: cursive;
+            font-size: 25px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 95, 8);
+        }
+        a:hover{
+            color: salmon;
+            background-color: springgreen;
+        }
+        a:visited{
+            background-color: rgb(140, 149, 235);
+        }
+        a:active{
+            background-color: violet;
+        }
+        .btn{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 100px;
+        }
+        .btn:hover{
+            color: maroon;
+            background-color: mediumspringgreen;
+            border: 4px solid firebrick;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sed consectetur in! Enim corrupti cum voluptatem, assumenda ad aliquid modi sint maxime aliquam consectetur eius qui explicabo est harum beatae quaerat error commodi dolorum quidem alias? Inventore odit accusamus ex voluptatibus, sint quam, excepturi est quas facere hic delectus id.</p>
+        <a href="https://linkedin.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact us</button> <br>
+    </div>
+</body>
+</html>

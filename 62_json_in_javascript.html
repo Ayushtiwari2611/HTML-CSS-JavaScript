@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in javascript</title>
+</head>
+<body>
+    <div class="container">This is a container</div>
+
+    <p>JSON converts objects into strings using stringify and json_strings into objects using parse. <br> convert stringify string into an object and it only takes a valid Json string not any string.</p> 
+
+    <script>
+        let jsonObj = {
+            name : "Ayush",
+            cast : "Tiwari",
+            college : "adgitm",
+            rollno : 433,
+            food :"burger"
+        }
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace("Ayush", "Piyush");
+        console.log(myJsonStr);
+        
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>

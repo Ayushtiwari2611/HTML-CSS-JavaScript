@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">
+        This is our container class
+    </div>
+
+    <script>
+        let myVar1 = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+        let employee = {
+            name : "ayush",
+            surname : "tiwari",
+            salary : 1000,
+            gender : "male"
+        }
+        console.log(employee);
+        console.log(employee.gender);
+
+        let names = [45,1,23,"harry","undefined"]
+        // console.log(names);
+        console.log(names.length);
+        names = names.sort();
+        names = names.push("goodboy");
+        console.log(names);
+
+        let arr = new Array(23,45);
+        let arr2 = new Array(23)
+        console.log(arr)
+
+    </script>
+</body>
+</html>

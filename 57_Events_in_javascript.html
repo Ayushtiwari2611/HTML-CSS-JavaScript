@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening to Events in JS</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: blanchedalmond;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Here are some Events follows as :-</h2>
+        <ol id="items">
+            <li>Click</li>
+            <li>Mouseover / Mouseout</li>
+            <li>Mouseup / Mousedown</li>
+            <li>Mousemove</li>
+            <li>Contextmenu</li>
+            <li>Submit</li>
+            <li>Focus</li>
+            <li>DOMContentLoaded</li>
+            <li>Transitionend</li>
+        </ol>
+        <button id="btn" onclick="togglehide()">Show / Hide</button>
+    </div>
+
+    <script>
+        function togglehide() {
+            let btn = document.getElementById("btn");
+            let items = document.getElementById("items");
+            if (items.style.display != 'none') {
+                items.style.display = 'none';
+            }
+            else {
+                items.style.display = 'block';
+            }
+        }
+
+        // Other Event Listeners are :-
+        let items = document.getElementById("items");
+        items.addEventListener('mouseover', function run() {
+            let firstalert = alert("Mouse Inside Event");
+            console.log(firstalert);
+        })
+
+        let items = document.getElementById("items");
+        items.addEventListener('mouseout', function run() {
+            let secondalert = alert("Mouse Outside Event");
+            console.log(secondalert);
+        })
+
+    </script>
+</body>
+
+</html>

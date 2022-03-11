@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* Comment can be add by "Ctrl+/" */
+        
+        /* Element Selector */
+        p{
+            border: 2px solid red;
+        }
+        
+        /* id selector */
+        #FirstPara{
+            color:green;
+        }
+
+        /* class selector */
+        .types{
+            color:rgb(255, 0, 234);
+            background-color: rgb(158, 236, 230);
+        }
+
+        /* grouping selector */
+        footer,span{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <p class="types">CSS Selectors are used to find element whose property will be set or used to target to html elements. Selectors make it easy for us to easily target single or multiple HTML elements to markup.</p>
+    <h4>Four types of selectors in CSS are :- </h4>
+        <p class="types"> 1. CSS element selector <br>
+        2. CSS id selector <br>
+        3. CSS class selector <br>
+        4. CSS grouping selector
+        </p>
+
+    <h3> CSS Selectors </h3>
+
+    <p id="FirstPara">This is simple paragraph to demonstrate css selectors</p>
+    <p id="SecondPara">This is another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph to demonstrate css selectors</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: rgb(241, 206, 117);
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Services Contact
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam eveniet repudiandae delectus iste autem voluptates veritatis obcaecati quos explicabo magnam commodi quod illo, in aliquid corrupti. Ducimus vitae iure placeat veniam dolor, consequuntur esse rerum quisquam, nemo, iusto deserunt ullam. Perspiciatis, enim modi voluptates assumenda ipsa voluptatem ipsum alias, at minima cumque doloribus deserunt voluptate exercitationem? Eaque corrupti tempora ipsam natus, sapiente ea iure. Animi expedita inventore iure architecto unde quos sunt in quidem ipsum, voluptates facere vitae natus praesentium rerum vel ut aliquid earum repellendus quaerat hic doloribus molestiae maiores temporibus? Vitae repudiandae id eligendi, pariatur ducimus animi iure accusantium consequatur velit est quo ipsum similique quos debitis voluptate eos minima ex ullam reprehenderit. Ipsam et inventore deserunt.
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ullam alias esse! Architecto eos quam maxime illo quos voluptates est modi ipsa impedit sint repellendus totam, sit odit harum voluptate ab recusandae iste distinctio fugiat. Ullam voluptate recusandae cum distinctio reiciendis quod eum! Quasi ipsa id odit architecto pariatur similique repellendus, enim repellat velit cum deserunt magnam recusandae, qui impedit voluptatem possimus aliquid, quis debitis voluptates? Aperiam nisi dolore officiis sed quo. Rem cumque tempore accusamus ab natus sit similique ipsam hic, doloremque eligendi facilis tenetur nam assumenda laborum. Cupiditate suscipit dolore laborum ipsam. Eius unde blanditiis perferendis id a eveniet voluptatum quis sequi nesciunt est, placeat totam molestias doloremque ratione labore dolor error! Modi, officiis dolor animi quisquam odit esse tempore quo sequi, sint natus sed pariatur delectus in saepe consequatur iure reprehenderit quam quia est ratione, ut eaque quidem impedit? Cum qui aliquid dolorum repudiandae nisi similique totam.
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ad.
+        </footer>
+    </div>
+</body>
+
+</html>

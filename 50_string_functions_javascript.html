@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last occurence of a substring
+        var position2 = str.lastIndexOf('is');
+        console.log(position2);
+
+        // Substring from a string
+        var substr = str.slice(1,7);
+        var substr = str.substring(1,7);
+        var substr1 = str.substr(1,3);
+        console.log(substr1);
+
+        var replaced = str.replace('string','laptop')
+        console.log(str);
+        console.log(replaced);
+        console.log(str.toLowerCase);
+        console.log(str.toUpperCase);
+        
+        var newstring = str.concat(' New string');
+        console.log(newstring);
+
+        var stringwithwhitespaces = "      this contains      white   spaces       ";
+        console.log(stringwithwhitespaces);
+        console.log(stringwithwhitespaces.trim());
+
+        var charac = str.charAt(2);
+        console.log(charac);
+    </script>
+</body>
+</html>

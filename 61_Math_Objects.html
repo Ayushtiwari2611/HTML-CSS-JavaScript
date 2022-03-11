@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects in javascript</title>
+</head>
+
+<body>
+    <div class="container">This is a container</div>
+
+    <script>
+        // Printing math objects
+        let m = Math;
+        console.log(m);
+        console.log("The value of Math.E = " + Math.E);
+        console.log("The value of Math.PI = " + Math.PI);
+        
+        // Printing functions from math objects
+        let a = 31.58;
+        let b = 54.04;
+        console.log("The value of a and b is ", a,b);
+        console.log("Rounded value of a and b is ", Math.round(a), Math.round(b));
+
+        // Power of Function
+        console.log("The value of 3**2 is " + Math.pow(3, 2));
+        console.log("The value of 2**12 is " + Math.pow(2, 12));
+        console.log("The value of 4.25**3.12 is " + Math.pow(4.25, 3.12));
+
+        // Square root function
+        console.log("The square root of 16 is " + Math.sqrt(16));
+        console.log("The square root of 15 is is " + Math.sqrt(15));
+        console.log("The square root of 9.648 is " + Math.sqrt(9.648));
+
+        // Ceil and Floor value function
+        console.log("The ceil value of 17.35 is " + Math.floor(17.35));
+        console.log("The floor value of 10.74 is " + Math.ceil(10.74));
+
+        // Absolute function
+        console.log("The absolute (abs) value of 17.35 " + Math.abs(17.35));
+        console.log("The absolute (abs) value of -17.35 " + Math.abs(-17.35));
+
+        // Trigonometric functions
+        console.log("The value of sin(PI/2) is " + Math.sin(Math.PI/2));
+        console.log("The value of cos(PI/4) is " + Math.cos(Math.PI/4));
+        console.log("The value of tan(PI/6) is " + Math.tan(Math.PI/6));
+        
+        // min and max function
+        console.log("The min value of 5,15,34 is " + Math.min(5,15,34));
+        console.log("The max value of 5,12,50 is " + Math.max(5,12,50));
+
+        
+        
+        // Generate random numbers :-
+
+        // Generate the random number between 0 and 1 only
+        let r = Math.random();
+        console.log(r);
+
+        // Generate random number between two integers, a & b
+        let a1 = 1;
+        let b1 = 18;
+        let r1 = a1 + (b1-a1)*Math.random();
+        console.log(r1);
+
+    </script>
+</body>
+
+</html>

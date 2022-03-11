@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxshadow and textshadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 20px 10px;
+            margin: 20px 10px;
+            background-color: bisque;
+            border: 2px solid red;
+            
+            /* Box Shadow */
+
+            /* box-shadow: offset-x offset-y color; */
+            box-shadow: 10px 13px green;
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            box-shadow: 10px 13px 10px magenta;
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color(in rgba); */
+            box-shadow: 10px 13px 10px 5px orange;
+            box-shadow: 10px 13px 10px 5px rgba(133, 228, 228, 0.966);
+
+            /* box-shadow: inset offset-x offset-y color; */
+            box-shadow: 10px 13px green, 16px 18px blue;
+        }
+        .card h2{
+            
+            /* Text-shadow */
+
+            /* box-shadow: offset-x offset-y color; */
+            text-shadow: 2px 2px crimson;
+
+            /* text-shadow: offset-x offset-y blur-radius color; */
+            text-shadow: 3px 2px 2px white;
+            text-shadow: -5px -6px 2px lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a facere ratione vel rerum totam ad atque vero alias dolore, magnam nemo. Itaque, voluptatum quam aliquid nostrum illum aperiam laborum reprehenderit sequi hic earum.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a facere ratione vel rerum totam ad atque vero alias dolore, magnam nemo. Itaque, voluptatum quam aliquid nostrum illum aperiam laborum reprehenderit sequi hic earum.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Java course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis a facere ratione vel rerum totam ad atque vero alias dolore, magnam nemo. Itaque, voluptatum quam aliquid nostrum illum aperiam laborum reprehenderit sequi hic earum.</p>
+        </div>
+    </div>
+</body>
+</html>
